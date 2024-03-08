@@ -12,3 +12,10 @@ ea7d4d0 nambah note di master
 45d0b4b (tag: v1.0.0, feature/a) menambahkan file5.txt
 84c7044 menambahkan file4.txt
 7c0bdd2 ini commit pertama
+
+list commit ID dari branch master:
+b2666cf file1 rebase dari master
+ea7d4d0 nambah note di master
+45d0b4b (tag: v1.0.0, feature/a) menambahkan file5.txt
+84c7044 menambahkan file4.txt
+7c0bdd2 ini commit pertama
