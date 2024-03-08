@@ -1,0 +1,6 @@
+git rebase
+menyatukan 2 buah branch
+
+perbedaan:
+git merge: kita masuk ke master dulu
+git rebase: kita ada di cabang, tapi bisa rebase ke master
