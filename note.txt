@@ -19,3 +19,71 @@ ea7d4d0 nambah note di master
 45d0b4b (tag: v1.0.0, feature/a) menambahkan file5.txt
 84c7044 menambahkan file4.txt
 7c0bdd2 ini commit pertama
+
+list commit ID dari branch feature/b:
+877e4c1 (HEAD -> feature/b) file 3 commit ke 2 rebase
+50d6007 file 2 commit ke 1 rebase
+ea7d4d0 nambah note di master
+45d0b4b (tag: v1.0.0, feature/a) menambahkan file5.txt
+84c7044 menambahkan file4.txt
+7c0bdd2 ini commit pertama
+
+list commit ID dari branch master:
+b2666cf file1 rebase dari master
+ea7d4d0 nambah note di master
+45d0b4b (tag: v1.0.0, feature/a) menambahkan file5.txt
+84c7044 menambahkan file4.txt
+7c0bdd2 ini commit pertama
+
+git rebase mengambil semua commit dari master ke branch saat ini(kaya ngepull).
+git rebase master
+(penggabungan commit ID)
+hasil rebase:
+cfbc204 (HEAD -> feature/b) file 3 commit ke 2 rebase
+47432ac file 2 commit ke 1 rebase
+9b4e68f (master) update note.txt
+dc15a5e update note.txt
+b2666cf file1 rebase dari master
+ea7d4d0 nambah note di master
+45d0b4b (tag: v1.0.0, feature/a) menambahkan file5.txt
+84c7044 menambahkan file4.txt
+7c0bdd2 ini commit pertama
+
+squash: membuat banyak log commit menjadi 1 log commit  saja
+git merge --squash <nama branch>
+hasil merge masuk ke staging area (perlu dicommit lagi)
+7268a4f (HEAD -> feature/c) file6 ditambahkan dari feature/c commit ke2
+a4317ad file 5 diupdate dari branch feature/c commit ke1
+
+protocol ssh: tidak perlu ketik id password tiap push
+ssh-keygen
+Your identification has been saved in /home/ajusd/.ssh/id_rsa
+copy isi id_rsa.pub
+di github,
+ke profile, settings, ssh and gpg keys
+ssh -T git@github.com
+
+di quick setup repository kita, click ssh
+copy link ssh
+git remote add origin <paste>
+
+ngecek:
+git remote
+git remote get-url origin
+
+git push origin master
+git push origin --all (ngepush semua branch)
+
+git push --delete origin <nama branch> 
+menghapus yang ada di github saja, tidak di lokal
+
+git branch -r
+melihat branch yg ada di remote
+
+git branch -a
+melihat branch yg ada di remote dan local
+
+tugas:
+harus membuat cheatsheet perintah git dalam bentuk pdf minimal 3 halaman dengan jenis tulisan lato ukuran 10
+habis itu, kita ngeshare ke LinkedIn, kasi hashtag MIKTI, MSIB6, tag kak dheo dan dzaky
+submit dengan link postingan linkedin ke submitan link.
