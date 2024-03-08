@@ -4,3 +4,11 @@ menyatukan 2 buah branch
 perbedaan:
 git merge: kita masuk ke master dulu
 git rebase: kita ada di cabang, tapi bisa rebase ke master
+
+list commit ID dari branch feature/b:
+877e4c1 (HEAD -> feature/b) file 3 commit ke 2 rebase
+50d6007 file 2 commit ke 1 rebase
+ea7d4d0 nambah note di master
+45d0b4b (tag: v1.0.0, feature/a) menambahkan file5.txt
+84c7044 menambahkan file4.txt
+7c0bdd2 ini commit pertama
