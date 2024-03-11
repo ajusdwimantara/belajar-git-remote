@@ -83,7 +83,37 @@ melihat branch yg ada di remote
 git branch -a
 melihat branch yg ada di remote dan local
 
-tugas:
-harus membuat cheatsheet perintah git dalam bentuk pdf minimal 3 halaman dengan jenis tulisan lato ukuran 10
-habis itu, kita ngeshare ke LinkedIn, kasi hashtag MIKTI, MSIB6, tag kak dheo dan dzaky
-submit dengan link postingan linkedin ke submitan link.
+jika ngeclone, kita hanya mengambil master/repository utamanya saja
+kenapa ambil https?
+git clone <url> <nama folder yang ingin dibuat>
+clone -> ambil repository
+fetch -> melihat perubahan pada remote repository
+
+mengambil branch pada remote repository yang di clone:
+git checkout -b <nama branch untuk local repository kita> origin/<nama branch yang ingin ditarik>
+contoh:
+git checkout -b hotfix origin/feature/a
+ketika git branch:
+* hotfix
+* master
+dimana hotfix mengambil isi dari feature/a
+
+fetch tidak merubah isi local repository kita, hanya melihat perubahan dari remote repository
+
+git fetch origin master: cuma ngambil perubahan di master
+git diff master origin/master: membandingkan local dengan remote
+
+git pull: mengambil perubahan di remote ke master
+jika ada merge conflict, harus diperbaiki manual
+saat kita pull, kita otomatis akan fetch terlebih dahulu
+
+push tag ke remote repository
+git push origin <tag version>
+git pull origin: ngambil tag juga
+git push --delete origin <versi tag>: menghapus tag 
+
+git request-pull origin <versi ><nama branch kita di local>
+contoh:
+git request-pull v2.0.0 origin hotfix
+
+dilakukan setelah -> git push origin hotfix
